@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+  .lesson-page-2-47 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: #000000;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1078px; 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-2-48 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 75px 0;
+    color: #0000FF; 
+  }
+
+  .content-wrapper,
+  .footer-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .content-wrapper {
+    align-items: flex-start;
+    margin-bottom: 108px; 
+  }
+
+  .lesson-info {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .lesson-list-title {
+    margin: 0 0 1em 0;
+  }
+
+  .lesson-list-2-49 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .progress-text-2-55 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    color: #FF0000;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    background-color: #00FF00; 
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .btn-start-2-50 {
+    width: 319px;
+    background-color: #00FF00;
+  }
+
+  .btn-end-2-52 {
+    width: 288px;
+    background-color: #FF0000;
+  }
+  @media (max-width: 1100px) {
+    .content-wrapper,
+    .footer-actions {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      text-align: center;
+    }
+    .lesson-info {
+      text-align: left;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .title-2-48,
+    .lesson-info,
+    .progress-text-2-55,
+    .btn {
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title-2-48,
+    .lesson-info,
+    .progress-text-2-55,
+    .btn {
+      font-size: 22px;
+    }
+    .btn {
+      height: 80px;
+      width: 100%;
+      max-width: 320px;
+    }
+    .btn-start-2-50, .btn-end-2-52 {
+      width: 100%;
+    }
+  }

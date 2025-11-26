@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жүйеге кіру</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <section id="login-section" class="login-page">
+        <div class="login-container">
+            <h1 class="login-title">Жүйеге кіру</h1>
+            <form class="login-form">
+                <div class="form-group email-group">
+                    <label for="email" class="form-label">Электрондық пошта:</label>
+                    <input type="email" id="email" class="form-input" name="email" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group password-group">
+                    <label for="password" class="form-label">Құпиясөз:</label>
+                    <input type="password" id="password" class="form-input" required>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="submit-button">Кіру</button>
+                </div>
+            </form>
+            <div class="register-prompt">
+                <p>Тіркелмедіңіз бе?</p>
+                <a href="register.html" class="register-link">Тіркелу</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        const loginForm = document.querySelector('.login-form');
+
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'course.html'; 
+        });
+        const registerLink = document.querySelector('.register-link');
+        registerLink.addEventListener('click', function() {
+            window.location.href = 'register.html';
+        });
+    </script>
+</body>
+</html>
